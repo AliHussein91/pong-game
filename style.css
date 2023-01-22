@@ -1,0 +1,109 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.gameContainer {
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: wssw;
+  justify-content: center;
+}
+
+.score {
+  width: 50%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.controls {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.reset-btn {
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -2px 8px 15px black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 1.7em;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.reset-btn:hover {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  transform: translateY(-3px)
+}
